@@ -32,8 +32,8 @@ const NavBar = () => {
     </ul>
   </div>
   <div className="navbar-end gap-3">
-    <a className="btn btn-success">Button</a>
-    <a className="btn btn-primary">Button</a>
+    <a className="btn btn-success text-white">Sign In</a>
+    <a className="btn btn-primary">Sing Up</a>
   </div>
 </div>
         </nav>
