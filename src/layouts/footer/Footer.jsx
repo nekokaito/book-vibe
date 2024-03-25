@@ -3,7 +3,7 @@ import { GiSecretBook } from "react-icons/gi";
 const Footer = () => {
     return (
         
-         <footer className="footer footer-center p-10 bg-black text-primary-content">
+  <footer className="footer footer-center p-10 bg-black text-primary-content">
   <aside>
       <GiSecretBook size={50}/>
   

@@ -1,19 +1,12 @@
-import { useEffect, useState } from "react";
+import Books from "../../components/books/Books";
 
 const Home = () => {
-//    const [books, setBooks] = useState([]);
 
-//     useEffect(() => {
-//         fetch('book.json')
-//         .then (res => res.json())
-//         .then (data => setBooks(data))
-//     }, [])
-    
-//     console.log(books)
 
     return (
-        <div className="">
-        <div className="hero min-h-96 rounded-3xl bg-base-200">
+        <div>
+            <header>
+            <div className="hero min-h-96 rounded-3xl bg-base-200">
   <div className="hero-content flex-col lg:flex-row-reverse gap-3 lg:gap-40">
     <img src="cover.jpg" className="max-w-56 rounded-lg shadow-2xl" />
     <div className="flex flex-col">
@@ -21,8 +14,13 @@ const Home = () => {
       <button className="btn mt-5 btn-primary w-1/2">View The List</button>
     </div>
   </div>
-</div>    
+</div> 
+ </header>
+          <Books></Books>
         </div>
+       
+           
+        
     );
 };
 
