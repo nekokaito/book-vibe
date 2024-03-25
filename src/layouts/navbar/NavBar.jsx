@@ -1,14 +1,15 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { GiSecretBook } from "react-icons/gi";
 
 
 const NavBar = () => {
-    const links = <>
+    const links = <div className="md:flex gap-3">
          <li><NavLink to="/">Home</NavLink></li>
          <li><NavLink to="/listed">Listed Books</NavLink></li>
          <li><NavLink to="/read">Pages to Read</NavLink></li>
          <li><NavLink to="/contact">Contact</NavLink></li>
          <li><NavLink to="/about">About</NavLink></li>
-    </>
+    </div>
     return (
         <nav>
             <div className="navbar bg-base-100">
@@ -23,15 +24,16 @@ const NavBar = () => {
        }
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+   <Link className="flex gap-2 text-2xl"><GiSecretBook size={30}/> BookHub</Link> 
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
       {links}
     </ul>
   </div>
-  <div className="navbar-end">
-    <a className="btn">Button</a>
+  <div className="navbar-end gap-3">
+    <a className="btn btn-success">Button</a>
+    <a className="btn btn-primary">Button</a>
   </div>
 </div>
         </nav>

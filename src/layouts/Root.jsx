@@ -3,9 +3,11 @@ import NavBar from './navbar/NavBar'
 import Footer from "./footer/Footer";
 const Root = () => {
     return (
-        <div>
+        <div className="font-work">
+            <div className="container mx-auto">
             <NavBar></NavBar>
             <Outlet></Outlet>
+            </div>
             <Footer></Footer>
         </div>
     );
