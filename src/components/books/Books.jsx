@@ -11,7 +11,7 @@ const Books = () => {
         .then (data => setBooks(data))
     }, [])
     
-    console.log(books)
+    
     return (
        <section className="my-16">
         <h1 className="text-center my-10 text-4xl font-bold">Books</h1>

@@ -8,7 +8,7 @@ const Card = ({book}) => {
 
     return (
         <div className="">
-            <div className="card w-96 bg-base-100  p-5 border">
+            <div className="card w-96 bg-base-100 min-h-[500px]  p-5 border">
   <figure className="rounded-2xl bg-gray-200 p-4"><img className=" h-56" src={image} alt="Shoes" /></figure>
   <div className="card-body">
     <div className="flex gap-2 text-green-400">
