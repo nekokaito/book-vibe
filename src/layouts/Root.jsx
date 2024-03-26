@@ -3,8 +3,8 @@ import NavBar from './navbar/NavBar'
 import Footer from "./footer/Footer";
 const Root = () => {
     return (
-        <div className="font-work">
-            <div className="container mx-auto">
+        <div className="font-work ">
+            <div className="container mx-auto min-h-screen">
             <NavBar></NavBar>
             <Outlet></Outlet>
             </div>
