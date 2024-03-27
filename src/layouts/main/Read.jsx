@@ -10,7 +10,7 @@ const Read = () => {
            {
             books.map((book,id) => <ListCard key={id} book={book}></ListCard> )
            } 
-           <p>{books.length}</p>
+           
         </div>
     );
 };
