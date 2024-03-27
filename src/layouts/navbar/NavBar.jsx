@@ -6,7 +6,7 @@ const NavBar = () => {
     const links = <div className="md:flex gap-3">
          <li><NavLink to="/">Home</NavLink></li>
          <li><NavLink to="/listed/read">Listed Books</NavLink></li>
-         <li><NavLink to="/read">Pages to Read</NavLink></li>
+         <li><NavLink to="/readgraph">Pages to Read</NavLink></li>
          <li><NavLink to="/contact">Contact</NavLink></li>
          <li><NavLink to="/about">About</NavLink></li>
     </div>

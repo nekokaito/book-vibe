@@ -14,7 +14,7 @@ const Read = () => {
     return (
         <div>
            {
-            books.map((book,id) => <ListCard key={id} book={book}></ListCard> )
+            books.map((book,id) => <ListCard key={id} book={book}></ListCard>)
            } 
            
         </div>
