@@ -13,6 +13,7 @@ import Contact from './layouts/main/Contact';
 import About from './layouts/main/About';
 import Wishlist from './layouts/main/Wishlist';
 import BookAbout from './layouts/main/BookAbout';
+import ReadGraph from './layouts/main/ReadGraph';
 
 
 const router = createBrowserRouter([
@@ -31,7 +32,6 @@ const router = createBrowserRouter([
         children: [
           {
             path: "/listed/read",
-            loader: () => fetch('/book.json'),
             element: <Read></Read>
           },
           {
@@ -39,6 +39,10 @@ const router = createBrowserRouter([
             element: <Wishlist></Wishlist>
           }
         ]
+      },
+      {
+        path: "/readgraph",
+        element: <ReadGraph></ReadGraph>
       },
        {
         path: "/contact",

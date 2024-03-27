@@ -1,9 +1,15 @@
-import { useLoaderData } from "react-router-dom";
+
 import ListCard from "../../components/cards/ListCard";
+import { useEffect, useState } from "react";
 
 
 const Read = () => {
-    const books = useLoaderData();
+    const [books, setBooks] = useState([]);
+
+    useEffect(() => {
+        const data = JSON.parse(localStorage.getItem("booksRead")) || [];
+        setBooks(data);
+    }, [])
     
     return (
         <div>

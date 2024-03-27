@@ -3,9 +3,10 @@ import Tags from "../tags/Tags";
 import { CiLocationOn } from "react-icons/ci";
 import { TbUsers } from "react-icons/tb";
 import { RiPagesLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const ListCard = ({ book }) => {
-    const { bookName, author, image, category, tags, rating, publisher, yearOfPublishing, totalPages } = book;
+    const { bookId, bookName, author, image, category, tags, rating, publisher, yearOfPublishing, totalPages } = book;
     return (
         <div className="border rounded-2xl p-5 mt-4 w-full">
             <div className="flex gap-2">
@@ -27,7 +28,7 @@ const ListCard = ({ book }) => {
                          <div className="flex gap-4">
                             <button className="btn hover:bg-[#328EFF26] border-none bg-[#328EFF26] text-[#328EFF] rounded-3xl">Category: {category}</button>
                             <button className="btn hover:bg-[#FFAC3326] border-none bg-[#FFAC3326] text-[#FFAC33] rounded-3xl">Rating: {rating}</button>
-                            <button className="btn  bg-green-500 text-white rounded-3xl">View Details</button>
+                            <Link to={`/${bookId}`} className="btn  bg-green-500 text-white rounded-3xl">View Details</Link>
 
                             
                          </div>
