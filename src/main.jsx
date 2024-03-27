@@ -12,6 +12,7 @@ import Read from './layouts/main/Read';
 import Contact from './layouts/main/Contact';
 import About from './layouts/main/About';
 import Wishlist from './layouts/main/Wishlist';
+import BookAbout from './layouts/main/BookAbout';
 
 
 const router = createBrowserRouter([
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        
       },
       {
         path: "/listed",
@@ -45,6 +47,11 @@ const router = createBrowserRouter([
       {
         path:"/about",
         element: <About></About>
+      },
+      {
+        path: "/:bookId",
+        loader: () => fetch('/book.json'),
+        element: <BookAbout></BookAbout>
       }
     ]
   },

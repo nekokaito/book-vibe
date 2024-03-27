@@ -4,7 +4,7 @@ import ListCard from "../../components/cards/ListCard";
 
 const Read = () => {
     const books = useLoaderData();
-    console.log(books)
+    
     return (
         <div>
            {

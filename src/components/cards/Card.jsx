@@ -1,13 +1,15 @@
 /* eslint-disable react/prop-types */
 import { CiStar } from "react-icons/ci";
 import Tags from "../tags/Tags";
+import { Link } from "react-router-dom";
 
 const Card = ({book}) => {
    
-    const {bookName, author, image, category, tags ,rating } = book;
+    const {bookId,bookName, author, image, category, tags ,rating } = book;
+    
 
     return (
-        <div className="">
+        <Link to={`/${bookId}`} className="">
             <div className="card w-96 bg-base-100 min-h-[500px]  p-5 border">
   <figure className="rounded-2xl bg-gray-200 p-4"><img className=" h-56" src={image} alt="Shoes" /></figure>
   <div className="card-body">
@@ -29,7 +31,7 @@ const Card = ({book}) => {
     </div>
   </div>
 </div>
-        </div>
+        </Link>
     );
 };
 
