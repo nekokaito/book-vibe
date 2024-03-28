@@ -30,11 +30,11 @@ const Read = () => {
                 <div>
                     <div className="flex my-5 justify-center">
                         <div className="dropdown dropdown-end">
-                            <div tabIndex={0} role="button" className="btn m-1">Sort By</div>
+                            <div tabIndex={0} role="button" className="btn bg-[#8ed7dd]  m-1">Sort By</div>
                             <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
                                 <li><a onClick={() =>  setSortBy('rating')}>Rating</a></li>
-                                <li><a onClick={() =>  setSortBy('totalPages')}>Book Pages</a></li>
-                                <li><a onClick={() =>  setSortBy('yearOfPublishing')}>Published Year</a></li>
+                                <li><a onClick={() =>  setSortBy('totalPages')}>Number of Pages</a></li>
+                                <li><a onClick={() =>  setSortBy('yearOfPublishing')}>Publisher Year</a></li>
                             </ul>
                         </div>
                     </div>

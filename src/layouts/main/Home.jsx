@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Books from "../../components/books/Books";
 
 const Home = () => {
@@ -11,7 +12,7 @@ const Home = () => {
     <img src="cover.jpg" className="max-w-56 rounded-lg shadow-2xl" />
     <div className="flex flex-col items-center">
       <h1 className="text-2xl md:text-5xl font-bold">Books to freshen<br></br> up your bookshelf</h1>
-      <button className="btn mt-5 bg-[#8ed7dd] w-1/2">View The List</button>
+      <Link to="/listed/read" className="btn mt-5 bg-[#8ed7dd] w-1/2">View The List</Link>
     </div>
   </div>
 </div> 

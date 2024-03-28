@@ -23,10 +23,10 @@ const BookAbout = () => {
         
         <div className="my-10 flex justify-center items-center">
                 <Toaster></Toaster>
-            <div className="flex items-start gap-12">
+            <div className="flex p-10 flex-col lg:flex-row items-start gap-12">
                 {/* image div */}
                 <div className=" rounded-3xl p-8 bg-gray-100">
-                    <img className="h-[500px]" src={image} alt="" />
+                    <img className=" lg:h-[500px]" src={image} alt="" />
                 </div>
 
                 <div className="flex flex-col gap-6 border p-3 rounded-3xl">
