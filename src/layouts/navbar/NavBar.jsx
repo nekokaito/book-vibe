@@ -31,7 +31,7 @@ const NavBar = () => {
       {links}
     </ul>
   </div>
-  <div className="hidden lg:navbar-end gap-3">
+  <div className="hidden lg:flex lg:navbar-end gap-3">
     <a className="btn bg-[#8ed7dd] text-white">Sign In</a>
     <a className="btn bg-[#c6bff7]">Sing Up</a>
   </div>
