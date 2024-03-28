@@ -9,13 +9,19 @@ const ListCard = ({ book }) => {
     const { bookId, bookName, author, image, category, tags, rating, publisher, yearOfPublishing, totalPages } = book;
     return (
         <div className="border rounded-2xl p-5 mt-4 w-full">
-            <div className="flex gap-2">
+            <div className="flex flex-col lg:flex-row items-center lg:items-start gap-2">
                 <div className="w-48"><img src={image} alt="" /></div>
                 <div className="flex flex-col gap-4">
-                    <h3 className="text-2xl font-bold">{bookName}</h3>
-                    <p>By: {author}</p>
-                    <div className="flex gap-2 items-center">Tags: <span className="flex gap-1">{
-                        tags.slice(0, 2).map((tag, i) => <Tags key={i} tag={tag}></Tags>)}</span> <CiLocationOn /><p>Year of Publishing: {yearOfPublishing}</p></div>
+                    <div className="flex flex-col justify-center">
+                    <h3 className="text-2xl text-center lg:text-left font-bold">{bookName}</h3>
+                    <p className="text-center lg:text-left">By: {author}</p>
+                    </div>
+                    
+                    <div className="flex flex-col lg:flex-row gap-2 items-center">
+                        <div className="flex items-center">Tags: <span className="flex gap-1">
+                        {
+                        tags.slice(0, 2).map((tag, i) => <Tags key={i} tag={tag}></Tags>)}</span></div> 
+                        <div className="flex items-center"><CiLocationOn /><p>Year of Publishing: {yearOfPublishing}</p></div></div>
                         <div className="flex items-center gap-5">
                             <span className="flex items-center gap-1">
                             <TbUsers /> <p>Publisher: {publisher}</p>
