@@ -10,6 +10,8 @@ const Read = () => {
         const data = JSON.parse(localStorage.getItem("booksRead")) || [];
         setBooks(data);
     }, [])
+
+    
     
     return (
         <div>

@@ -11,6 +11,7 @@ import toast, { Toaster } from 'react-hot-toast';
     else {
         savedData.push(book);
         localStorage.setItem("booksRead", JSON.stringify(savedData));
+        toast.success('Successfully Added to Read List.')
     }
 
 };
@@ -35,6 +36,7 @@ export const dataLoadFromWishStorage = (book) => {
     else {
         savedData.push(book);
         localStorage.setItem("booksWish", JSON.stringify(savedData));
+        toast.success('Successfully Added to Wish List.')
     }
  }
    
