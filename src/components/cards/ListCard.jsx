@@ -25,7 +25,7 @@ const ListCard = ({ book }) => {
                             </span>
                          </div>
                          <hr />
-                         <div className="flex gap-4">
+                         <div className="flex flex-col lg:flex-row gap-4">
                             <button className="btn hover:bg-[#328EFF26] border-none bg-[#328EFF26] text-[#328EFF] rounded-3xl">Category: {category}</button>
                             <button className="btn hover:bg-[#FFAC3326] border-none bg-[#FFAC3326] text-[#FFAC33] rounded-3xl">Rating: {rating}</button>
                             <Link to={`/${bookId}`} className="btn  bg-green-500 text-white rounded-3xl">View Details</Link>
