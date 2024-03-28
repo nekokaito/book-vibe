@@ -8,7 +8,7 @@ const Footer = () => {
       <GiSecretBook size={50}/>
   
     <p className=" text-2xl font-bold">
-      BookHub
+      BookVibe
     </p> 
     <p>Copyright © 2024 - All right reserved</p>
   </aside> 
