@@ -43,7 +43,7 @@ const ReadGraph = () => {
   
     return (
       <div className="flex my-20 items-center">
-        <ResponsiveContainer width="100%" height={500}>
+        <ResponsiveContainer width="100%" height={400}>
           <BChart data={books}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="bookName" />

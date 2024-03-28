@@ -11,7 +11,7 @@ const NavBar = () => {
          <li><NavLink to="/about">About</NavLink></li>
     </div>
     return (
-        <nav>
+        <nav className="">
             <div className="navbar bg-base-100">
   <div className="navbar-start">
     <div className="dropdown">
@@ -24,16 +24,16 @@ const NavBar = () => {
        }
       </ul>
     </div>
-   <Link className="flex gap-2 text-2xl"><GiSecretBook size={30}/> BookHub</Link> 
+   <Link className="flex gap-2 text-2xl font-extrabold"><GiSecretBook size={30}/> BookVibe</Link> 
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
       {links}
     </ul>
   </div>
-  <div className="navbar-end gap-3">
-    <a className="btn btn-success text-white">Sign In</a>
-    <a className="btn btn-primary">Sing Up</a>
+  <div className="hidden lg:navbar-end gap-3">
+    <a className="btn bg-[#8ed7dd] text-white">Sign In</a>
+    <a className="btn bg-[#c6bff7]">Sing Up</a>
   </div>
 </div>
         </nav>
