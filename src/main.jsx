@@ -14,11 +14,13 @@ import About from './layouts/main/About';
 import Wishlist from './layouts/main/Wishlist';
 import BookAbout from './layouts/main/BookAbout';
 import ReadGraph from './layouts/main/ReadGraph';
+import Error from './layouts/error/Error';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
+    errorElement: <Error></Error>,
     element: <Root></Root>,
     children: [
       {
